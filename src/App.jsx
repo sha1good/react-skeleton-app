@@ -9,11 +9,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState({});
 
-  useEffect(() => {
+  //const baseUrl = process.env.REACT_APP_BASE_URL;
+
+useEffect(() => {
     const getUsers = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("/api/user/1");
+        const response = await axios.get("https://youtube-clone-i8xt.onrender.com/api/user/1");
         setUser(response.data);
         setIsLoading(false)
       } catch (error) {

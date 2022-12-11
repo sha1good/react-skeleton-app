@@ -8,11 +8,13 @@ const Feed = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [videos, setVideos] = useState([]);
 
+  //const baseUrl = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     const getVideos = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("/api/videos/1");
+        const response = await axios.get("https://youtube-clone-i8xt.onrender.com/api/videos/1");
        setIsLoading(false)
        setVideos(response.data);
       } catch (error) {
