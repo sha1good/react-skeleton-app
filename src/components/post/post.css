@@ -1,0 +1,58 @@
+.post{
+    margin-right: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+   
+}
+
+.postImgContainer{
+    position: relative;
+    width: 274px;
+    height: 153px
+}
+
+.postImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*  going to cover the parent container */
+}
+
+.postDuration{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    padding : 2px 5px;
+}
+
+.postInfoContainer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.postAvatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.postInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.postTitle{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.postChannel, .postDetail{
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
